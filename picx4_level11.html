@@ -241,15 +241,15 @@
                <br>
                <div class="card bg-transparent" id="buttons">
                   <div class="button" style="text-align: center;">
-                     <button onclick="funcn()" class="key" id="M">M</button>
+                     <button onclick="funcm()" class="key" id="M">M</button>
                      <button onclick="funcr()" class="key" id="R">R</button>
-                     <button onclick="funcs()" class="key" id="Z">Z</button>
-                     <button onclick="funct()" class="key" id="O">O</button>
+                     <button onclick="funci()" class="key" id="I">I</button>
+                     <button onclick="funco()" class="key" id="O">O</button>
                      <br>
-                     <button onclick="funco()" class="key" id="J">J</button>
+                     <button onclick="funcj()" class="key" id="J">J</button>
                      <button onclick="funcc()" class="key" id="C">C</button>
-                     <button onclick="funce()" class="key" id="N">N</button>
-                     <button onclick="funck()" class="key" id="U">U</button>
+                     <button onclick="funce()" class="key" id="E">E</button>
+                     <button onclick="funcn()" class="key" id="N">N</button>
                   </div>
                </div>
             </div>
@@ -279,7 +279,7 @@
          
          var display = document.getElementById('display').innerHTML;
           
-          function funcn() {
+          function funcm() {
           document.getElementById('display').innerHTML+='M';
           document.getElementById('M').disabled = true;
            }
@@ -287,15 +287,15 @@
           document.getElementById('display').innerHTML+='R';
           document.getElementById('R').disabled = true;
            }
-           function funcs() {
-          document.getElementById('display').innerHTML+='Z';
-          document.getElementById('Z').disabled = true;
+           function funci() {
+          document.getElementById('display').innerHTML+='I';
+          document.getElementById('I').disabled = true;
            }
-           function funct() {
+           function funco() {
           document.getElementById('display').innerHTML+='O';
           document.getElementById('O').disabled = true;
            }
-           function funco() {
+           function funcj() {
           document.getElementById('display').innerHTML+='J';
           document.getElementById('J').disabled = true;
            }
@@ -304,12 +304,12 @@
           document.getElementById('C').disabled = true;
            }
           function funce() {
+          document.getElementById('display').innerHTML+='E';
+          document.getElementById('E').disabled = true;
+           }
+           function funcn() {
           document.getElementById('display').innerHTML+='N';
           document.getElementById('N').disabled = true;
-           }
-           function funck() {
-          document.getElementById('display').innerHTML+='U';
-          document.getElementById('U').disabled = true;
            }
            function funcSub() {
           
@@ -318,7 +318,7 @@
           if (display == "MINE") {
           
           if (MINE == 0) {
-             location.href = "https://salcaraz2025.github.io/picx4_level12.html";
+             location.href="picx4_level12.html";
              }
           }
           
@@ -329,12 +329,12 @@
           document.getElementById('display').innerHTML ="";
           document.getElementById('M').disabled = false;
           document.getElementById('R').disabled = false;
-          document.getElementById('Z').disabled = false;
+          document.getElementById('I').disabled = false;
           document.getElementById('O').disabled = false;
           document.getElementById('J').disabled = false;
           document.getElementById('C').disabled = false;
-          document.getElementById('N').disabled = false;
-          document.getElementById('U').disabled = false;
+          document.getElementById('E').disabled = false;
+          document.getElementById('N).disabled = false;
          }
          
          function funcshow() {
@@ -347,7 +347,7 @@
              document.getElementById('mainmenureturn').style.display="block";
          }
          function funcreturnyes() {
-             location.href = "salcaraz2025.github.io/index.html";
+             location.href="index.html";
          }
          function funcreturnno() {
              document.getElementById('mainmenureturn').style.display="none";
