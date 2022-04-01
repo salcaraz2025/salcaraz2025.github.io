@@ -241,15 +241,15 @@
                <br>
                <div class="card bg-transparent" id="buttons">
                   <div class="button" style="text-align: center;">
-                     <button onclick="funcn()" class="key" id="D">D</button>
+                     <button onclick="funcd()" class="key" id="D">D</button>
                      <button onclick="funcr()" class="key" id="R">R</button>
-                     <button onclick="funcs()" class="key" id="Aone">A</button>
-                     <button onclick="funct()" class="key" id="O">O</button>
+                     <button onclick="funcaone()" class="key" id="Aone">A</button>
+                     <button onclick="funco()" class="key" id="O">O</button>
                      <br>
-                     <button onclick="funco()" class="key" id="W">W</button>
-                     <button onclick="funcc()" class="key" id="P">P</button>
-                     <button onclick="funce()" class="key" id="N">N</button>
-                     <button onclick="funck()" class="key" id="Atwo">A</button>
+                     <button onclick="funcw()" class="key" id="W">W</button>
+                     <button onclick="funcp()" class="key" id="P">P</button>
+                     <button onclick="funcn()" class="key" id="N">N</button>
+                     <button onclick="funcatwo()" class="key" id="Atwo">A</button>
                   </div>
                </div>
             </div>
@@ -279,7 +279,7 @@
          
          var display = document.getElementById('display').innerHTML;
           
-          function funcn() {
+          function funcd() {
           document.getElementById('display').innerHTML+='D';
           document.getElementById('D').disabled = true;
            }
@@ -287,27 +287,27 @@
           document.getElementById('display').innerHTML+='R';
           document.getElementById('R').disabled = true;
            }
-           function funcs() {
+           function funcaone() {
           document.getElementById('display').innerHTML+='A';
           document.getElementById('Aone').disabled = true;
            }
-           function funct() {
+           function funco() {
           document.getElementById('display').innerHTML+='O';
           document.getElementById('O').disabled = true;
            }
-           function funco() {
+           function funcw() {
           document.getElementById('display').innerHTML+='W';
           document.getElementById('W').disabled = true;
            }
-           function funcc() {
+           function funcp() {
           document.getElementById('display').innerHTML+='P';
           document.getElementById('P').disabled = true;
            }
-          function funce() {
+          function funcn() {
           document.getElementById('display').innerHTML+='N';
           document.getElementById('N').disabled = true;
            }
-           function funck() {
+           function funcatwo() {
           document.getElementById('display').innerHTML+='A';
           document.getElementById('Atwo').disabled = true;
            }
@@ -318,7 +318,7 @@
           if (display == "PANDA") {
           
           if (PANDA == 0) {
-             location.href = "https://salcaraz2025.github.io/picx4_level13.html";
+             location.href="picx4_level13.html";
              }
           }
           
@@ -347,7 +347,7 @@
              document.getElementById('mainmenureturn').style.display="block";
          }
          function funcreturnyes() {
-             location.href = "salcaraz2025.github.io/index.html";
+             location.href = "index.html";
          }
          function funcreturnno() {
              document.getElementById('mainmenureturn').style.display="none";
