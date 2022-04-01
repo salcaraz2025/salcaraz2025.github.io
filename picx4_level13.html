@@ -241,15 +241,15 @@
                <br>
                <div class="card bg-transparent" id="buttons">
                   <div class="button" style="text-align: center;">
-                     <button onclick="funcn()" class="key" id="P">P</button>
+                     <button onclick="funct()" class="key" id="T">T</button>
                      <button onclick="funcr()" class="key" id="R">R</button>
                      <button onclick="funcs()" class="key" id="S">S</button>
-                     <button onclick="funct()" class="key" id="O">O</button>
+                     <button onclick="funco()" class="key" id="O">O</button>
                      <br>
-                     <button onclick="funco()" class="key" id="W">W</button>
-                     <button onclick="funcc()" class="key" id="P">P</button>
-                     <button onclick="funce()" class="key" id="N">N</button>
-                     <button onclick="funck()" class="key" id="H">H</button>
+                     <button onclick="funcw()" class="key" id="W">W</button>
+                     <button onclick="funcp()" class="key" id="P">P</button>
+                     <button onclick="funcn()" class="key" id="N">N</button>
+                     <button onclick="funch()" class="key" id="H">H</button>
                   </div>
                </div>
             </div>
@@ -279,9 +279,9 @@
          
          var display = document.getElementById('display').innerHTML;
           
-          function funcn() {
-          document.getElementById('display').innerHTML+='P';
-          document.getElementById('P').disabled = true;
+          function funct() {
+          document.getElementById('display').innerHTML+='T';
+          document.getElementById('T').disabled = true;
            }
            function funcr() {
           document.getElementById('display').innerHTML+='R';
@@ -291,23 +291,23 @@
           document.getElementById('display').innerHTML+='S';
           document.getElementById('S').disabled = true;
            }
-           function funct() {
+           function funco() {
           document.getElementById('display').innerHTML+='O';
           document.getElementById('O').disabled = true;
            }
-           function funco() {
+           function funcw() {
           document.getElementById('display').innerHTML+='W';
           document.getElementById('W').disabled = true;
            }
-           function funcc() {
+           function funcp() {
           document.getElementById('display').innerHTML+='P';
           document.getElementById('P').disabled = true;
            }
-          function funce() {
+          function funcn() {
           document.getElementById('display').innerHTML+='N';
           document.getElementById('N').disabled = true;
            }
-           function funck() {
+           function funch() {
           document.getElementById('display').innerHTML+='H';
           document.getElementById('H').disabled = true;
            }
@@ -327,7 +327,7 @@
          
           
           document.getElementById('display').innerHTML ="";
-          document.getElementById('P').disabled = false;
+          document.getElementById('T').disabled = false;
           document.getElementById('R').disabled = false;
           document.getElementById('S').disabled = false;
           document.getElementById('O').disabled = false;
