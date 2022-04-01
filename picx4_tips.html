@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>PIC X 4: Tips and Tricks</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Code+Pro&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/ba7958d753.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+      <style>
+         * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         }
+         body {
+         background-image: url(https://wallpaperaccess.com/full/38127.jpg);
+         background-size: cover;
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+         }
+         #overlay {
+         height: 83%;
+         width: 93.55%;
+         background-color: rgb(37, 37, 37);
+         margin-left: 50px;
+         margin-right: 50px;
+         z-index: 20;
+         position: fixed;
+         display: none;
+         border-radius: 10px;
+         padding: 50px;
+         text-align: center;
+         }
+         .overlaybutton {
+         width: 800px;
+         height: 100px;
+         font-family: 'Bungee', cursive;
+         background-image: url(https://thumbs.dreamstime.com/b/floor-tiles-texture-backround-top-view-125096003.jpg);
+         background-size: cover;
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+         color: rgb(255, 255, 255);
+         text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+         font-size: 50px;
+         text-align: center;
+         margin: 10px;
+         transition: .2s;
+         border-radius: 5px;
+         z-index: 20;
+         }
+         #mainmenureturn {
+         height: 83%;
+         width: 60%;
+         font-family: 'Righteous', cursive;
+         font-size: 50px;
+         color: rgb(255, 255, 255);
+         background-color: rgb(37, 37, 37);
+         margin-left: 300px;
+         margin-right: 300px;
+         z-index: 30;
+         position: fixed;
+         display: none;
+         border-radius: 10px;
+         padding: 50px;
+         text-align: center;
+         }
+         #music {
+         color: white;
+         font-size: 30px;
+         margin-top: 10px;
+         text-shadow: 0 0 5px blue, 0 0 5px blue;
+         z-index: 10;
+         }
+         .returnoverlaybutton {
+         width: 400px;
+         height: 100px;
+         font-family: 'Bungee', cursive;
+         background-image: url(https://img.freepik.com/free-vector/rock-stone-seamless-pattern_98292-3360.jpg);
+         background-size: cover;
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+         color: rgb(255, 255, 255);
+         text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+         font-size: 50px;
+         text-align: center;
+         margin: 10px;
+         transition: .2s;
+         border-radius: 5px;
+         z-index: 30;
+         }
+         header {
+         font-family: 'Bungee', cursive;
+         text-align: center;
+         background-image: none;
+         color: white;
+         text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+         margin-top: 25px;
+         margin-bottom: 20px;
+         z-index: 10;
+         }
+         #options {
+         font-size: 30px;
+         color: rgb(255, 255, 255);
+         text-shadow: 0 0 5px red, 0 0 5px red;
+         }
+         .center {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         z-index: 10;
+         }
+         #leftside {
+         margin-top: 25px;
+         z-index: 10;
+         }
+         #rightside {
+         align-content: center;
+         margin-top: 25px;
+         z-index: 10;
+         }
+         #button {
+         width: 100%;
+         z-index: 10;
+         }
+         #cheatsheet{
+            background-color:rgb(24, 24, 24);
+            border: #aaaaaa;
+            transition: .2s;
+            border-style: ridge;
+         }
+         #cheat {
+            font-family: 'Righteous', cursive;
+         font-size: 50px;
+         color: rgb(255, 255, 255);
+         text-align: center;
+         margin-top: 20px;
+         text-shadow: 0 0 5px rgb(255, 23, 23), 0 0 5px rgb(255, 25, 0);
+         z-index: 10;
+         }
+         #sheet {
+            font-family: 'Righteous', cursive;
+         font-size: 25px;
+         color: rgb(255, 255, 255);
+         text-align: center;
+         margin-top: 20px;
+         text-shadow: 0 0 5px rgb(255, 23, 23), 0 0 5px rgb(255, 25, 0);
+         z-index: 10;
+         }
+      </style>
+   </head>
+
+   <body>
+      <header>
+         <h1> <i class="fa-solid fa-camera-retro"></i> PIC X 4 <i class="fa-brands fa-wordpress"></i></h1>
+      </header>
+      <div id="overlay">
+         <button onclick="funcback()" class="overlaybutton"> Back to Game </button>
+         <button onclick="funcreturnmainmenu()" class="overlaybutton"> Return to Main Menu </button>
+      </div>
+      <div id="mainmenureturn">
+         <h1>Are you sure you want to return to Main Menu? All progress you have made will be lost if you do so.</h1>
+         <br>
+         <button onclick="funcreturnyes()" class="returnoverlaybutton"> Yes </button>
+         <button onclick="funcreturnno()" class="returnoverlaybutton"> No </button>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-1" id="options">
+               <i class="fa-solid fa-pause" onclick="funcshow()"></i>
+            </div>
+            <div class="col-8"></div>
+         </div>
+
+         <div class="card" id="cheatsheet">       
+            <div class="card-body">
+               <div class="card-title" id="cheat">
+            <p>Cheatsheet</p> 
+               </div>
+            <div class="card-text" id="sheet"> 
+            1. CAT
+            2. PLANET
+            3. ROCK 
+            4. DICTATOR
+            5. CHEM
+            6. STATION
+            7. HEAT
+            8. CARD
+            9. CRASH
+            10. FORCE 
+            11. MINE 
+            12. PANDA
+            13. SHOW 
+            14. WAVE
+            15. BAT
+            16. TRAP
+            17. HIGH
+            18. AQUA
+            19. MOUSE
+            20. BROOM 
+            21. WORLD 
+            22. BOOM
+            23. ROLL
+            24. CHECK
+            25. COLOR
+            </div>
+       </div>
+      </div>
+      <div class="row">
+         <div class="col-1" id="music">
+            <div class="musicOn">
+             <audio id="audio" style="display:none;" src="kahoot.mp3" controls autoplay loop>
+           </div>
+           <div class="container">
+             <h1 class="title" onclick="WhenClicked()" id="emoji">🎶</h1>
+           </div>
+           
+         </div>
+         <div class="col-8"></div>
+         </div>
+      </div>
+      </div>
+      <script>
+           function funcSub() {
+          
+          display = document.getElementById('display').innerHTML += "";
+          
+           }
+         
+         function funcshow() {
+             document.getElementById('overlay').style.display="block";
+         }
+         function funcback() {
+             document.getElementById('overlay').style.display="none";
+         }
+         function funcreturnmainmenu() {
+             document.getElementById('mainmenureturn').style.display="block";
+         }
+         function funcreturnyes() {
+             location.href = "file:///C:/Users/ACER/OneDrive/Documents/PSHS%20Grade%209/2Q/ComSci/Project/home_dashboard.html";
+         }
+         function funcreturnno() {
+             document.getElementById('mainmenureturn').style.display="none";
+         }
+         let on_off = document.querySelector('.container .title');
+        let audio = document.querySelector('.musicOn audio');
+
+        on_off.onclick = function() {
+        audio.paused ? audio.play() : audio.pause();
+        }
+      </script>
+   </body>
+</html>
