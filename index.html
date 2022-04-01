@@ -148,7 +148,7 @@
          <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
-               <button id="start" onclick="document.location='salcaraz2025.github.io/picx4_level1.html'">
+               <button id="start" onclick="funcStart()">
                Start  <i class="fa-solid fa-play"></i>
                </button>
             </div>
@@ -158,7 +158,7 @@
          <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
-               <button id="tutorial" onclick="document.location='salcaraz2025.github.io/howtoplay.html'">
+               <button id="tutorial" onclick="funcshow()">
                How to Play  <i class="fas fa-book"></i>
                </button>
             </div>
@@ -178,7 +178,7 @@
          <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
-               <button id="about" onclick="document.location='salcaraz2025.github.io/about.html'">
+               <button id="about" onclick="funcabout()">
                About <i class="fas fa-users"></i>
                </button>
             </div>
@@ -200,6 +200,15 @@
          </div>
       </div>
       <script>
+         function funcStart() {
+            document.location="picx4_level1.html";
+         }
+         function funcshow() {
+            document.location="howtoplay.html";
+         }
+         function funcabout() {
+            document.location="about.html";
+         }
          function funcanswers() {
              document.getElementById('prompt').style.display="block";
          }
