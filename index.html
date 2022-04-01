@@ -148,7 +148,7 @@
          <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
-               <button id="start" onclick="document.location='salcaraz2025.github.io/picx4_level1.html'">
+               <button id="start" onclick="document.location=''">
                Start  <i class="fa-solid fa-play"></i>
                </button>
             </div>
@@ -184,6 +184,20 @@
             </div>
             <div class="col-sm-4"></div>
          </div>
+         <div class="row">
+            <div class="col-2" id="music">
+               <div class="col-2" id="music">
+                  <div class="musicOn">
+                   <audio id="audio" style="display:none;" src="kahoot.mp3" controls autoplay loop>
+                 </div>
+              <div class="container">
+                <h1 class="title" onclick="WhenClicked()" id="emoji">🎶</h1>
+              </div>
+
+            </div>
+            </div>
+            <div class="col-sm-10"></div>
+         </div>
       </div>
       <script>
          function funcanswers() {
@@ -195,6 +209,12 @@
          function funcno() {
              document.getElementById('prompt').style.display="none";
          }
+         let on_off = document.querySelector('.container .title');
+        let audio = document.querySelector('.musicOn audio');
+
+        on_off.onclick = function() {
+        audio.paused ? audio.play() : audio.pause();
+        }
       </script>
    </body>
 </html>

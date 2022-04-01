@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Pic X 4: How To Play</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Code+Pro&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/ba7958d753.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+      <style>
+         * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         }
+         body {
+         background-image: url(https://wallpaperaccess.com/full/38127.jpg);
+         background-size: cover;
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+         }
+         header {
+         font-family: 'Bungee', cursive;
+         text-align: center;
+         background-image: none;
+         color: white;
+         text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+         margin-top: 25px;
+         margin-bottom: 25px;
+         z-index: 10;
+         }
+         #return {
+         font-family: 'Righteous', cursive;
+         margin-bottom: 25px;
+         color: white;
+         text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+         text-align: center;
+         z-index: 10;
+         }
+         .card-header {
+         background-color: rgb(255, 225, 0);
+         font-family: 'Bungee', cursive;
+         text-align: center;
+         color: white;
+         padding: 10px;
+         text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+         z-index: 10;
+         }
+         .card-content {
+         background-image: url(https://wallpaperaccess.com/full/38127.jpg);
+         background-size: cover;
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+         font-family: 'Righteous', cursive;
+         font-size: 30px;
+         color: white;
+         text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+         text-align: left;
+         padding: 20px;
+         z-index: 10;
+         max-height: 400px;
+         overflow-y: scroll;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <h1 style="font-size: 70px;"> <i class="fa-solid fa-camera-retro"></i> Pic X 4 <i class="fa-brands fa-wordpress"></i></h1>
+      </header>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-3" id="return">
+               <a href="#" style="color: white;">
+                  <h4> <i class="fas fa-angle-left"></i> Return to Main Menu </h4>
+               </a>
+            </div>
+            <div class="col-sm-8"></div>
+            <div class="col-sm-1"></div>
+         </div>
+         <div class="row">
+            <div class="col-sm-12">
+               <div class="card">
+                  <div class="card-header">
+                     <h2>How to Play</h2>
+                  </div>
+                  <div class="card-content">
+                     <p>• In Pic x 4, you have 25 levels to complete, each with four pictures and eight letters.</p>
+                     <p>• Think of a word that matches all the corresponding pictures given in each level.</p>
+                     <p>• Once you have the word in your mind, press the buttons and type the word.</p>
+                     <p>• After typing the word, press submit to check your answer. </p>
+                     <p>• If you are correct, you will proceed to the next level.</p>
+                     <p>• If you are wrong, all the buttons and the text area will be reset.</p>
+                     <p>• Complete all 25 levels, and you win the game. </p>
+                     <br>
+                     <br>
+                     <h2>Tips</h2>
+                     <p>Need some help? Read these  and learn something new today!</p>
+                     <br>
+                     <p> 1. Try thinking outside the box. </p>
+                     <p> 2. Be cultured in memes and modern internet culture. Trust us on this one!</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-2" id="music">
+         <div class="col-2" id="music">
+            <div class="musicOn">
+             <audio id="audio" style="display:none;" src="kahoot.mp3" controls autoplay loop>
+           </div>
+        <div class="container">
+          <h1 class="title" onclick="WhenClicked()" id="emoji">🎶</h1>
+        </div>
+
+      </div>
+      </div>
+      <script>let on_off = document.querySelector('.container .title');
+         let audio = document.querySelector('.musicOn audio');
+ 
+         on_off.onclick = function() {
+         audio.paused ? audio.play() : audio.pause();
+         }</script>
+   </body>
+</html>
