@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>4Pics1Word: Level 1</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Code+Pro&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/ba7958d753.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+      <style>
+         * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         }
+         body {
+         background-image: url(https://wallpaperaccess.com/full/38127.jpg);
+         background-size: cover;
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+         }
+         #overlay {
+         height: 83%;
+         width: 93.55%;
+         background-color: rgb(37, 37, 37);
+         margin-left: 50px;
+         margin-right: 50px;
+         z-index: 20;
+         position: fixed;
+         display: none;
+         border-radius: 10px;
+         padding: 50px;
+         text-align: center;
+         }
+         .overlaybutton {
+         width: 800px;
+         height: 100px;
+         font-family: 'Bungee', cursive;
+         background-image: url(https://wallpaperaccess.com/full/57200.jpg);
+         background-size: cover;
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+         color: rgb(255, 255, 255);
+         text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+         font-size: 50px;
+         text-align: center;
+         margin: 10px;
+         transition: .2s;
+         border-radius: 5px;
+         z-index: 20;
+         }
+         #mainmenureturn {
+         height: 83%;
+         width: 60%;
+         font-family: 'Righteous', cursive;
+         font-size: 50px;
+         color: rgb(255, 255, 255);
+         background-color: rgb(37, 37, 37);
+         margin-left: 300px;
+         margin-right: 300px;
+         z-index: 30;
+         position: fixed;
+         display: none;
+         border-radius: 10px;
+         padding: 50px;
+         text-align: center;
+         }
+         .returnoverlaybutton {
+         width: 400px;
+         height: 100px;
+         font-family: 'Bungee', cursive;
+         background-image: url(https://wallpaperaccess.com/full/57200.jpg);
+         background-size: cover;
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+         color: rgb(255, 255, 255);
+         text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+         font-size: 50px;
+         text-align: center;
+         margin: 10px;
+         transition: .2s;
+         border-radius: 5px;
+         z-index: 30;
+         }
+         header {
+         font-family: 'Bungee', cursive;
+         text-align: center;
+         background-image: none;
+         color: white;
+         text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+         margin-top: 25px;
+         margin-bottom: 20px;
+         z-index: 10;
+         }
+         #options {
+         font-size: 30px;
+         color: rgb(255, 255, 255);
+         text-shadow: 0 0 5px red, 0 0 5px red;
+         z-index: 10;
+         }
+         #music {
+         color: white;
+         font-size: 30px;
+         margin-top: 10px;
+         text-shadow: 0 0 5px blue, 0 0 5px blue;
+         z-index: 10;
+         }
+         #score {
+         font-family: 'Righteous', cursive;
+         font-size: 50px;
+         color: rgb(255, 255, 255);
+         text-align: right;
+         margin-top: 20px;
+         text-shadow: 0 0 5px yellow, 0 0 5px yellow;
+         z-index: 10;
+         }
+         #level {
+         font-family: 'Righteous', cursive;
+         font-size: 50px;
+         color: rgb(255, 255, 255);
+         text-align: right;
+         margin-top: 20px;
+         text-shadow: 0 0 5px green, 0 0 5px green;
+         z-index: 10;
+         }
+         img {
+         max-width: 400px;
+         max-height: 400px;
+         align-items: center;
+         border: #000000;
+         border-style: solid;
+         z-index: 10;
+         }
+         .center {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         z-index: 10;
+         }
+         #leftside {
+         margin-top: 25px;
+         z-index: 10;
+         }
+         #rightside {
+         align-content: center;
+         margin-top: 25px;
+         z-index: 10;
+         }
+         .display {
+         text-transform: uppercase;
+         width: 80%;
+         resize: none;
+         height: 50px;
+         background-color: white;
+         color: black;
+         font-size: 30px;
+         font-family: 'Righteous', cursive;
+         text-align: center;
+         border: #000000;
+         margin-top: 30px;
+         border-style: ridge;
+         z-index: 10;
+         }
+         #submit {
+         background-color: white;
+         color: rgb(0, 0, 0);
+         margin: 0;
+         width: 20%;
+         height: 50px;
+         margin-top: -66px;
+         font-family: 'Righteous', cursive;
+         font-size: x-large;
+         text-align: center;
+         float: right;
+         border: #000000;
+         transition: .2s;
+         border-style: ridge;
+         z-index: 10;
+         }
+         #button {
+         width: 100%;
+         z-index: 10;
+         }
+         .key {
+         width: 100px;
+         height: 100px;
+         font-family: 'Bungee', cursive;
+         background-image: url(https://img.freepik.com/free-photo/white-grey-tile-wall-high-resolution-wallpaper-brick-seamless-texture-interior-background_1258-68714.jpg);
+         background-size: cover;
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+         color: rgb(255, 255, 255);
+         text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+         font-size: 50px;
+         text-align: center;
+         margin: 10px;
+         transition: .2s;
+         border-radius: 5px;
+         z-index: 10;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <h1> <i class="fa-solid fa-camera-retro"></i> Pic X 4 <i class="fa-brands fa-wordpress"></i></h1>
+      </header>
+      <div id="overlay">
+         <button onclick="funcback()" class="overlaybutton"> Back to Game </button>
+         <button onclick="funcreturnmainmenu()" class="overlaybutton"> Return to Main Menu </button>
+      </div>
+      <div id="mainmenureturn">
+         <h1>Are you sure you want to return to Main Menu? All progress you have made will be lost if you do so.</h1>
+         <br>
+         <button onclick="funcreturnyes()" class="returnoverlaybutton"> Yes </button>
+         <button onclick="funcreturnno()" class="returnoverlaybutton"> No </button>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-1" id="options">
+               <i class="fa-solid fa-pause" onclick="funcshow()"></i>
+            </div>
+            <div class="col-8"></div>
+            <div class="col-3" id="score">
+               <h2>Score: 17</h2>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-6" id="leftside">
+               <img src="https://i.ibb.co/17gDL6c/Screenshot-329.png" alt="4-Pics1-Word" class="center">
+            </div>
+            <br>
+            <br>
+            <div class="col-sm-6" id="rightside">
+               <p class="display" id="display"></p>
+               <button id="submit" onclick="funcSub()">Submit</button>
+               <br>
+               <div class="card bg-transparent" id="buttons">
+                  <div class="button" style="text-align: center;">
+                     <button onclick="funcq()" class="key" id="Q">Q</button>
+                     <button onclick="funcs()" class="key" id="S">S</button>
+                     <button onclick="funcaone()" class="key" id="Aone">A</button>
+                     <button onclick="funcatwo()" class="key" id="Atwo">A</button>
+                     <br>
+                     <button onclick="funcz()" class="key" id="Z">Z</button>
+                     <button onclick="funck()" class="key" id="K">K</button>
+                     <button onclick="funch()" class="key" id="H">H</button>
+                     <button onclick="funcu()" class="key" id="U">U</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <br>
+         <br>
+         <div class="row">
+            <div class="col-1" id="music">
+               <div class="col-1" id="music">
+                  <div class="musicOn">
+                   <audio id="audio" style="display:none;" src="STAL.mp3" controls autoplay loop>
+                 </div>
+              <div class="container">
+                <h1 class="title" onclick="WhenClicked()" id="emoji">🎶</h1>
+              </div>
+
+            </div>
+            </div>
+            <div class="col-8"></div>
+            <div class="col-3" id="level">
+               <h2>Level: 18</h2>
+            </div>
+         </div>
+      </div>
+      <script>
+         var AQUA = 0;
+         
+         var display = document.getElementById('display').innerHTML;
+          
+          function funcq() {
+          document.getElementById('display').innerHTML+='Q';
+          document.getElementById('Q').disabled = true;
+           }
+           function funcs() {
+          document.getElementById('display').innerHTML+='S';
+          document.getElementById('S').disabled = true;
+           }
+           function funcaone() {
+          document.getElementById('display').innerHTML+='A';
+          document.getElementById('Aone').disabled = true;
+           }
+           function funcatwo() {
+          document.getElementById('display').innerHTML+='A';
+          document.getElementById('Atwo').disabled = true;
+           }
+           function funcz() {
+          document.getElementById('display').innerHTML+='Z';
+          document.getElementById('Z').disabled = true;
+           }
+           function funck() {
+          document.getElementById('display').innerHTML+='K';
+          document.getElementById('K').disabled = true;
+          }
+          function funch() {
+          document.getElementById('display').innerHTML+='H';
+          document.getElementById('H').disabled = true;
+           }
+           function funcu() {
+          document.getElementById('display').innerHTML+='U';
+          document.getElementById('U').disabled = true;
+           }
+           function funcSub() {
+          
+          display = document.getElementById('display').innerHTML += "";
+          
+          if (display == "AQUA") {
+          
+          if (AQUA == 0) {
+             location.href = "file:///C:/Users/ACER/OneDrive/Documents/PSHS%20Grade%209/3Q/ComSci/fourpicsoneword_level2.html";
+             }
+          }
+          
+          else {
+          }
+         
+          
+          document.getElementById('display').innerHTML ="";
+          document.getElementById('Q').disabled = false;
+          document.getElementById('S').disabled = false;
+          document.getElementById('A').disabled = false;
+          document.getElementById('A').disabled = false;
+          document.getElementById('Z').disabled = false;
+          document.getElementById('K').disabled = false;
+          document.getElementById('H').disabled = false;
+          document.getElementById('U').disabled = false;
+         }
+         
+         function funcshow() {
+             document.getElementById('overlay').style.display="block";
+         }
+         function funcback() {
+             document.getElementById('overlay').style.display="none";
+         }
+         function funcreturnmainmenu() {
+             document.getElementById('mainmenureturn').style.display="block";
+         }
+         function funcreturnyes() {
+             location.href = "file:///C:/Users/ACER/OneDrive/Documents/PSHS%20Grade%209/2Q/ComSci/Project/home_dashboard.html";
+         }
+         function funcreturnno() {
+             document.getElementById('mainmenureturn').style.display="none";
+         }
+         let on_off = document.querySelector('.container .title');
+        let audio = document.querySelector('.musicOn audio');
+
+        on_off.onclick = function() {
+        audio.paused ? audio.play() : audio.pause();
+        }
+      </script>
+   </body>
+</html>
