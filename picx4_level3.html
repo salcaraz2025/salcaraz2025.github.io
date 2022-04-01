@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>Pic X 4: Level 1</title>
+      <title>Pic X 4: Level 3</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Code+Pro&display=swap" rel="stylesheet">
@@ -42,7 +42,7 @@
          width: 800px;
          height: 100px;
          font-family: 'Bungee', cursive;
-         background-image: url(https://wallpaperaccess.com/full/57200.jpg);
+         background-image: url(https://img.freepik.com/free-vector/rock-stone-seamless-pattern_98292-3360.jpg);
          background-size: cover;
          background-attachment: fixed;
          background-repeat: no-repeat;
@@ -75,7 +75,7 @@
          width: 400px;
          height: 100px;
          font-family: 'Bungee', cursive;
-         background-image: url(https://wallpaperaccess.com/full/57200.jpg);
+         background-image: url(https://img.freepik.com/free-vector/rock-stone-seamless-pattern_98292-3360.jpg);
          background-size: cover;
          background-attachment: fixed;
          background-repeat: no-repeat;
@@ -102,7 +102,6 @@
          font-size: 30px;
          color: rgb(255, 255, 255);
          text-shadow: 0 0 5px red, 0 0 5px red;
-         z-index: 10;
          }
          #music {
          color: white;
@@ -191,11 +190,11 @@
          width: 100px;
          height: 100px;
          font-family: 'Bungee', cursive;
-         background-image: url(https://wallpaperaccess.com/full/57200.jpg);
+         background-image: url(https://img.freepik.com/free-vector/rock-stone-seamless-pattern_98292-3360.jpg);
          background-size: cover;
          background-attachment: fixed;
          background-repeat: no-repeat;
-         color: rgb(255, 255, 255);
+         color: white;
          text-shadow: 0 0 5px #000000, 0 0 5px #000000;
          font-size: 50px;
          text-align: center;
@@ -227,12 +226,12 @@
             </div>
             <div class="col-8"></div>
             <div class="col-3" id="score">
-               <h2>Score: 0</h2>
+               <h2>Score: 2</h2>
             </div>
          </div>
          <div class="row">
             <div class="col-sm-6" id="leftside">
-               <img src="https://i.ibb.co/Wv2Dg7B/Cat-4-Pics1-Word.png" alt="4-Pics1-Word" class="center">
+               <img src="https://i.ibb.co/FK2JXf5/Untitled-design-5.png" alt="pichere" class="center">
             </div>
             <br>
             <br>
@@ -242,15 +241,15 @@
                <br>
                <div class="card bg-transparent" id="buttons">
                   <div class="button" style="text-align: center;">
-                     <button onclick="funcmone()" class="key" id="Mone">M</button>
-                     <button onclick="funcmtwo()" class="key" id="Mtwo">M</button>
-                     <button onclick="funcl()" class="key" id="L">L</button>
+                     <button onclick="funcn()" class="key" id="N">N</button>
+                     <button onclick="funcr()" class="key" id="R">R</button>
+                     <button onclick="funcs()" class="key" id="S">S</button>
                      <button onclick="funct()" class="key" id="T">T</button>
                      <br>
+                     <button onclick="funco()" class="key" id="O">O</button>
                      <button onclick="funcc()" class="key" id="C">C</button>
-                     <button onclick="funcmthree()" class="key" id="Mthree">M</button>
-                     <button onclick="funcaone()" class="key" id="Aone">A</button>
-                     <button onclick="funcatwo()" class="key" id="Atwo">A</button>
+                     <button onclick="funce()" class="key" id="E">E</button>
+                     <button onclick="funck()" class="key" id="K">K</button>
                   </div>
                </div>
             </div>
@@ -271,55 +270,55 @@
             </div>
             <div class="col-8"></div>
             <div class="col-3" id="level">
-               <h2>Level: 1</h2>
+               <h2>Level: 3</h2>
             </div>
          </div>
       </div>
       <script>
-         var CAT = 0;
+         var ROCK = 0;
          
          var display = document.getElementById('display').innerHTML;
           
-          function funcmone() {
-          document.getElementById('display').innerHTML+='M';
-          document.getElementById('Mone').disabled = true;
+          function funcn() {
+          document.getElementById('display').innerHTML+='N';
+          document.getElementById('N').disabled = true;
            }
-           function funcmtwo() {
-          document.getElementById('display').innerHTML+='M';
-          document.getElementById('Mtwo').disabled = true;
+           function funcr() {
+          document.getElementById('display').innerHTML+='R';
+          document.getElementById('R').disabled = true;
            }
-           function funcl() {
-          document.getElementById('display').innerHTML+='L';
-          document.getElementById('L').disabled = true;
+           function funcs() {
+          document.getElementById('display').innerHTML+='S';
+          document.getElementById('S').disabled = true;
            }
            function funct() {
           document.getElementById('display').innerHTML+='T';
           document.getElementById('T').disabled = true;
            }
+           function funco() {
+          document.getElementById('display').innerHTML+='O';
+          document.getElementById('O').disabled = true;
+           }
            function funcc() {
           document.getElementById('display').innerHTML+='C';
           document.getElementById('C').disabled = true;
            }
-           function funcmthree() {
-          document.getElementById('display').innerHTML+='M';
-          document.getElementById('Mthree').disabled = true;
-          }
-          function funcaone() {
-          document.getElementById('display').innerHTML+='A';
-          document.getElementById('Aone').disabled = true;
+          function funce() {
+          document.getElementById('display').innerHTML+='E';
+          document.getElementById('E').disabled = true;
            }
-           function funcatwo() {
-          document.getElementById('display').innerHTML+='A';
-          document.getElementById('Atwo').disabled = true;
+           function funck() {
+          document.getElementById('display').innerHTML+='K';
+          document.getElementById('K').disabled = true;
            }
            function funcSub() {
           
           display = document.getElementById('display').innerHTML += "";
           
-          if (display == "CAT") {
+          if (display == "ROCK") {
           
-          if (CAT == 0) {
-             location.href = "file:///C:/Users/ACER/OneDrive/Documents/PSHS%20Grade%209/3Q/ComSci/fourpicsoneword_level2.html";
+          if (ROCK == 0) {
+             location.href = "file:///C:/Users/ACER/OneDrive/Documents/PSHS%20Grade%209/3Q/ComSci/fourpicsoneword_level4.html";
              }
           }
           
@@ -328,14 +327,14 @@
          
           
           document.getElementById('display').innerHTML ="";
-          document.getElementById('Mone').disabled = false;
-          document.getElementById('Mtwo').disabled = false;
-          document.getElementById('L').disabled = false;
+          document.getElementById('N').disabled = false;
+          document.getElementById('R').disabled = false;
+          document.getElementById('S').disabled = false;
           document.getElementById('T').disabled = false;
+          document.getElementById('O').disabled = false;
           document.getElementById('C').disabled = false;
-          document.getElementById('Mthree').disabled = false;
-          document.getElementById('Aone').disabled = false;
-          document.getElementById('Atwo').disabled = false;
+          document.getElementById('E').disabled = false;
+          document.getElementById('K').disabled = false;
          }
          
          function funcshow() {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>Pic X 4: Level 1</title>
+      <title>Pic X 4: Level 5</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Code+Pro&display=swap" rel="stylesheet">
@@ -42,7 +42,7 @@
          width: 800px;
          height: 100px;
          font-family: 'Bungee', cursive;
-         background-image: url(https://wallpaperaccess.com/full/57200.jpg);
+         background-image: url(https://static.vecteezy.com/system/resources/previews/004/981/646/original/love-chemistry-elixir-potion-seamless-pattern-vector.jpg);
          background-size: cover;
          background-attachment: fixed;
          background-repeat: no-repeat;
@@ -75,7 +75,7 @@
          width: 400px;
          height: 100px;
          font-family: 'Bungee', cursive;
-         background-image: url(https://wallpaperaccess.com/full/57200.jpg);
+         background-image: url(https://static.vecteezy.com/system/resources/previews/004/981/646/original/love-chemistry-elixir-potion-seamless-pattern-vector.jpg);
          background-size: cover;
          background-attachment: fixed;
          background-repeat: no-repeat;
@@ -102,7 +102,6 @@
          font-size: 30px;
          color: rgb(255, 255, 255);
          text-shadow: 0 0 5px red, 0 0 5px red;
-         z-index: 10;
          }
          #music {
          color: white;
@@ -191,11 +190,11 @@
          width: 100px;
          height: 100px;
          font-family: 'Bungee', cursive;
-         background-image: url(https://wallpaperaccess.com/full/57200.jpg);
+         background-image: url(https://static.vecteezy.com/system/resources/previews/004/981/646/original/love-chemistry-elixir-potion-seamless-pattern-vector.jpg);
          background-size: cover;
          background-attachment: fixed;
          background-repeat: no-repeat;
-         color: rgb(255, 255, 255);
+         color: white;
          text-shadow: 0 0 5px #000000, 0 0 5px #000000;
          font-size: 50px;
          text-align: center;
@@ -227,12 +226,12 @@
             </div>
             <div class="col-8"></div>
             <div class="col-3" id="score">
-               <h2>Score: 0</h2>
+               <h2>Score: 4</h2>
             </div>
          </div>
          <div class="row">
             <div class="col-sm-6" id="leftside">
-               <img src="https://i.ibb.co/Wv2Dg7B/Cat-4-Pics1-Word.png" alt="4-Pics1-Word" class="center">
+                <img src="https://i.ibb.co/7p844hc/Chemistry.png" alt="pic" class="center">
             </div>
             <br>
             <br>
@@ -242,15 +241,15 @@
                <br>
                <div class="card bg-transparent" id="buttons">
                   <div class="button" style="text-align: center;">
-                     <button onclick="funcmone()" class="key" id="Mone">M</button>
-                     <button onclick="funcmtwo()" class="key" id="Mtwo">M</button>
-                     <button onclick="funcl()" class="key" id="L">L</button>
-                     <button onclick="funct()" class="key" id="T">T</button>
+                     <button onclick="funce()" class="key" id="E">E</button>
+                     <button onclick="funcm()" class="key" id="M">M</button>
+                     <button onclick="funci()" class="key" id="I">I</button>
+                     <button onclick="funch()" class="key" id="H">H</button>
                      <br>
+                     <button onclick="funcs()" class="key" id="S">S</button>
                      <button onclick="funcc()" class="key" id="C">C</button>
-                     <button onclick="funcmthree()" class="key" id="Mthree">M</button>
-                     <button onclick="funcaone()" class="key" id="Aone">A</button>
-                     <button onclick="funcatwo()" class="key" id="Atwo">A</button>
+                     <button onclick="funct()" class="key" id="T">T</button>
+                     <button onclick="funcr()" class="key" id="R">R</button>
                   </div>
                </div>
             </div>
@@ -271,55 +270,55 @@
             </div>
             <div class="col-8"></div>
             <div class="col-3" id="level">
-               <h2>Level: 1</h2>
+               <h2>Level: 5</h2>
             </div>
          </div>
       </div>
       <script>
-         var CAT = 0;
+         var CHEM = 0;
          
          var display = document.getElementById('display').innerHTML;
           
-          function funcmone() {
+          function funce() {
+          document.getElementById('display').innerHTML+='E';
+          document.getElementById('E').disabled = true;
+           }
+           function funcm() {
           document.getElementById('display').innerHTML+='M';
-          document.getElementById('Mone').disabled = true;
+          document.getElementById('M').disabled = true;
            }
-           function funcmtwo() {
-          document.getElementById('display').innerHTML+='M';
-          document.getElementById('Mtwo').disabled = true;
+           function funci() {
+          document.getElementById('display').innerHTML+='I';
+          document.getElementById('I').disabled = true;
            }
-           function funcl() {
-          document.getElementById('display').innerHTML+='L';
-          document.getElementById('L').disabled = true;
+           function funch() {
+          document.getElementById('display').innerHTML+='H';
+          document.getElementById('H').disabled = true;
            }
-           function funct() {
-          document.getElementById('display').innerHTML+='T';
-          document.getElementById('T').disabled = true;
+           function funcs() {
+          document.getElementById('display').innerHTML+='S';
+          document.getElementById('S').disabled = true;
            }
            function funcc() {
           document.getElementById('display').innerHTML+='C';
           document.getElementById('C').disabled = true;
            }
-           function funcmthree() {
-          document.getElementById('display').innerHTML+='M';
-          document.getElementById('Mthree').disabled = true;
-          }
-          function funcaone() {
-          document.getElementById('display').innerHTML+='A';
-          document.getElementById('Aone').disabled = true;
+          function funct() {
+          document.getElementById('display').innerHTML+='T';
+          document.getElementById('T').disabled = true;
            }
-           function funcatwo() {
-          document.getElementById('display').innerHTML+='A';
-          document.getElementById('Atwo').disabled = true;
+           function funcr() {
+          document.getElementById('display').innerHTML+='R';
+          document.getElementById('R').disabled = true;
            }
            function funcSub() {
           
           display = document.getElementById('display').innerHTML += "";
           
-          if (display == "CAT") {
+          if (display == "CHEM") {
           
-          if (CAT == 0) {
-             location.href = "file:///C:/Users/ACER/OneDrive/Documents/PSHS%20Grade%209/3Q/ComSci/fourpicsoneword_level2.html";
+          if (CHEM == 0) {
+             location.href = "file:///C:/Users/ACER/OneDrive/Documents/PSHS%20Grade%209/2Q/ComSci/Project/home_dashboard.html";
              }
           }
           
@@ -328,14 +327,14 @@
          
           
           document.getElementById('display').innerHTML ="";
-          document.getElementById('Mone').disabled = false;
-          document.getElementById('Mtwo').disabled = false;
-          document.getElementById('L').disabled = false;
-          document.getElementById('T').disabled = false;
+          document.getElementById('E').disabled = false;
+          document.getElementById('M').disabled = false;
+          document.getElementById('I').disabled = false;
+          document.getElementById('H').disabled = false;
+          document.getElementById('S').disabled = false;
           document.getElementById('C').disabled = false;
-          document.getElementById('Mthree').disabled = false;
-          document.getElementById('Aone').disabled = false;
-          document.getElementById('Atwo').disabled = false;
+          document.getElementById('T').disabled = false;
+          document.getElementById('R').disabled = false;
          }
          
          function funcshow() {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>Pic X 4: Level 1</title>
+      <title>Pic X 4: Level 4</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Code+Pro&display=swap" rel="stylesheet">
@@ -42,7 +42,7 @@
          width: 800px;
          height: 100px;
          font-family: 'Bungee', cursive;
-         background-image: url(https://wallpaperaccess.com/full/57200.jpg);
+         background-image: url(https://images.clipartlogo.com/files/istock/previews/9140/91403535-background-of-modern-city.jpg);
          background-size: cover;
          background-attachment: fixed;
          background-repeat: no-repeat;
@@ -75,7 +75,7 @@
          width: 400px;
          height: 100px;
          font-family: 'Bungee', cursive;
-         background-image: url(https://wallpaperaccess.com/full/57200.jpg);
+         background-image: url(https://images.clipartlogo.com/files/istock/previews/9140/91403535-background-of-modern-city.jpg);
          background-size: cover;
          background-attachment: fixed;
          background-repeat: no-repeat;
@@ -102,7 +102,6 @@
          font-size: 30px;
          color: rgb(255, 255, 255);
          text-shadow: 0 0 5px red, 0 0 5px red;
-         z-index: 10;
          }
          #music {
          color: white;
@@ -191,11 +190,11 @@
          width: 100px;
          height: 100px;
          font-family: 'Bungee', cursive;
-         background-image: url(https://wallpaperaccess.com/full/57200.jpg);
+         background-image: url(https://images.clipartlogo.com/files/istock/previews/9140/91403535-background-of-modern-city.jpg);
          background-size: cover;
          background-attachment: fixed;
          background-repeat: no-repeat;
-         color: rgb(255, 255, 255);
+         color: white;
          text-shadow: 0 0 5px #000000, 0 0 5px #000000;
          font-size: 50px;
          text-align: center;
@@ -227,12 +226,12 @@
             </div>
             <div class="col-8"></div>
             <div class="col-3" id="score">
-               <h2>Score: 0</h2>
+               <h2>Score: 3</h2>
             </div>
          </div>
          <div class="row">
             <div class="col-sm-6" id="leftside">
-               <img src="https://i.ibb.co/Wv2Dg7B/Cat-4-Pics1-Word.png" alt="4-Pics1-Word" class="center">
+                <img src="https://i.ibb.co/VMz48cR/Dictators.png" alt="pichere" class="center">
             </div>
             <br>
             <br>
@@ -242,15 +241,15 @@
                <br>
                <div class="card bg-transparent" id="buttons">
                   <div class="button" style="text-align: center;">
-                     <button onclick="funcmone()" class="key" id="Mone">M</button>
-                     <button onclick="funcmtwo()" class="key" id="Mtwo">M</button>
-                     <button onclick="funcl()" class="key" id="L">L</button>
-                     <button onclick="funct()" class="key" id="T">T</button>
+                     <button onclick="funcd()" class="key" id="D">D</button>
+                     <button onclick="funcr()" class="key" id="R">R</button>
+                     <button onclick="funci()" class="key" id="I">I</button>
+                     <button onclick="functone()" class="key" id="Tone">T</button>
                      <br>
+                     <button onclick="funca()" class="key" id="A">A</button>
                      <button onclick="funcc()" class="key" id="C">C</button>
-                     <button onclick="funcmthree()" class="key" id="Mthree">M</button>
-                     <button onclick="funcaone()" class="key" id="Aone">A</button>
-                     <button onclick="funcatwo()" class="key" id="Atwo">A</button>
+                     <button onclick="functtwo()" class="key" id="Ttwo">T</button>
+                     <button onclick="funco()" class="key" id="O">O</button>
                   </div>
                </div>
             </div>
@@ -271,55 +270,55 @@
             </div>
             <div class="col-8"></div>
             <div class="col-3" id="level">
-               <h2>Level: 1</h2>
+               <h2>Level: 4</h2>
             </div>
          </div>
       </div>
       <script>
-         var CAT = 0;
+         var DICTATOR = 0;
          
          var display = document.getElementById('display').innerHTML;
           
-          function funcmone() {
-          document.getElementById('display').innerHTML+='M';
-          document.getElementById('Mone').disabled = true;
+          function funcd() {
+          document.getElementById('display').innerHTML+='D';
+          document.getElementById('D').disabled = true;
            }
-           function funcmtwo() {
-          document.getElementById('display').innerHTML+='M';
-          document.getElementById('Mtwo').disabled = true;
+           function funcr() {
+          document.getElementById('display').innerHTML+='R';
+          document.getElementById('R').disabled = true;
            }
-           function funcl() {
-          document.getElementById('display').innerHTML+='L';
-          document.getElementById('L').disabled = true;
+           function funci() {
+          document.getElementById('display').innerHTML+='I';
+          document.getElementById('I').disabled = true;
            }
-           function funct() {
+           function functone() {
           document.getElementById('display').innerHTML+='T';
-          document.getElementById('T').disabled = true;
+          document.getElementById('Tone').disabled = true;
+           }
+           function funca() {
+          document.getElementById('display').innerHTML+='A';
+          document.getElementById('A').disabled = true;
            }
            function funcc() {
           document.getElementById('display').innerHTML+='C';
           document.getElementById('C').disabled = true;
            }
-           function funcmthree() {
-          document.getElementById('display').innerHTML+='M';
-          document.getElementById('Mthree').disabled = true;
-          }
-          function funcaone() {
-          document.getElementById('display').innerHTML+='A';
-          document.getElementById('Aone').disabled = true;
+          function functtwo() {
+          document.getElementById('display').innerHTML+='T';
+          document.getElementById('Ttwo').disabled = true;
            }
-           function funcatwo() {
-          document.getElementById('display').innerHTML+='A';
-          document.getElementById('Atwo').disabled = true;
+           function funco() {
+          document.getElementById('display').innerHTML+='O';
+          document.getElementById('O').disabled = true;
            }
            function funcSub() {
           
           display = document.getElementById('display').innerHTML += "";
           
-          if (display == "CAT") {
+          if (display == "DICTATOR") {
           
-          if (CAT == 0) {
-             location.href = "file:///C:/Users/ACER/OneDrive/Documents/PSHS%20Grade%209/3Q/ComSci/fourpicsoneword_level2.html";
+          if (DICTATOR == 0) {
+             location.href = "file:///C:/Users/ACER/OneDrive/Documents/PSHS%20Grade%209/3Q/ComSci/fourpicsoneword_level5.html";
              }
           }
           
@@ -328,14 +327,14 @@
          
           
           document.getElementById('display').innerHTML ="";
-          document.getElementById('Mone').disabled = false;
-          document.getElementById('Mtwo').disabled = false;
-          document.getElementById('L').disabled = false;
-          document.getElementById('T').disabled = false;
+          document.getElementById('D').disabled = false;
+          document.getElementById('R').disabled = false;
+          document.getElementById('I').disabled = false;
+          document.getElementById('Tone').disabled = false;
+          document.getElementById('A').disabled = false;
           document.getElementById('C').disabled = false;
-          document.getElementById('Mthree').disabled = false;
-          document.getElementById('Aone').disabled = false;
-          document.getElementById('Atwo').disabled = false;
+          document.getElementById('Ttwo').disabled = false;
+          document.getElementById('O').disabled = false;
          }
          
          function funcshow() {
